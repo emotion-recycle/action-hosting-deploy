@@ -59,10 +59,12 @@ export function interpretChannelDeployResult(
 
   const expireTime = allSiteResults[0].expireTime;
   const urls = allSiteResults.map((siteResult) => siteResult.url);
+  const target = allSiteResults[0].target;
 
   return {
     expireTime,
     urls,
+    target,
   };
 }
 
